@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+.pytest_cache/
+
+# Build output (PyInstaller)
+build/
+dist/
+
+# Local app data -- never commit databases
+*.db
+*.sqlite
+*.sqlite3
+
+# macOS / tooling
+.DS_Store
+.claude/
+
+# Generated working files
+ui_screenshots/
+*.log
+*.icns.tmp
+
+# Note: packaging/AppIcon.icns IS committed -- it is required by the
+# PyInstaller spec and reproducible with tools/build_brand_assets.py.

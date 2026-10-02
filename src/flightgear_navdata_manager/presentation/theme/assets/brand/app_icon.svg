@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+<defs>
+  <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#16213a"/>
+    <stop offset="1" stop-color="#060b17"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="0.5" cy="0.42" r="0.55">
+    <stop offset="0" stop-color="#7696e0" stop-opacity="0.16"/>
+    <stop offset="1" stop-color="#7696e0" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<rect x="100" y="112.0" width="824" height="824" rx="185" fill="#000" fill-opacity="0.0600"/><rect x="98" y="111.2" width="828" height="828" rx="187" fill="#000" fill-opacity="0.0530"/><rect x="96" y="110.4" width="832" height="832" rx="189" fill="#000" fill-opacity="0.0460"/><rect x="94" y="109.6" width="836" height="836" rx="191" fill="#000" fill-opacity="0.0390"/><rect x="92" y="108.8" width="840" height="840" rx="193" fill="#000" fill-opacity="0.0320"/><rect x="90" y="108.0" width="844" height="844" rx="195" fill="#000" fill-opacity="0.0250"/><rect x="88" y="107.2" width="848" height="848" rx="197" fill="#000" fill-opacity="0.0180"/><rect x="86" y="106.4" width="852" height="852" rx="199" fill="#000" fill-opacity="0.0110"/>
+<rect x="100" y="100" width="824" height="824" rx="185" fill="url(#plate)"/>
+<rect x="100" y="100" width="824" height="824" rx="185" fill="url(#glow)"/>
+<rect x="101.5" y="101.5" width="821" height="821" rx="183.5"
+      fill="none" stroke="#ffffff" stroke-opacity="0.09" stroke-width="3"/>
+<g transform="translate(190.64,190.64) scale(10.0425)"><g fill="none" stroke="#7696e0" stroke-width="3.6" stroke-linecap="round"><path d="M37.06,10.08 A22.5,22.5 0 0 1 53.92,26.94"/><path d="M53.92,37.06 A22.5,22.5 0 0 1 37.06,53.92"/><path d="M26.94,53.92 A22.5,22.5 0 0 1 10.08,37.06"/><path d="M10.08,26.94 A22.5,22.5 0 0 1 26.94,10.08"/></g><polygon fill="#e8efff" points="32.00,2.00 36.38,27.62 57.50,32.00 36.38,36.38 32.00,57.50 27.62,36.38 6.50,32.00 27.62,27.62"/><polygon fill="#1be3ad" points="32.00,2.00 36.38,27.62 32.00,32.00 27.62,27.62"/></g>
+</svg>

@@ -1,0 +1,45 @@
+[build-system]
+# 1.27+ understands the SPDX `license` string and `license-files` below.
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "flightgear-navdata-manager"
+version = "0.1.0"
+description = "macOS utility for importing, creating, managing and exporting custom FlightGear navigation data, without modifying FlightGear's installed navdata."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+# Tested on Python 3.11 (with PySide6 6.8) and 3.14 (with PySide6 6.11);
+# the release build is validated on 3.14.
+requires-python = ">=3.11"
+dependencies = [
+    # 6.8+: QStyleHints.setColorScheme (dark-only theme) and
+    # QFont.setFeature (fixed-width digits in Manage Data).
+    "PySide6>=6.8",
+]
+keywords = ["flightgear", "navdata", "navigation", "fix.dat", "nav.dat", "faa", "nasr"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: MacOS X",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Games/Entertainment :: Simulation",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+build = ["pyinstaller>=6.10"]
+
+[project.scripts]
+flightgear-navdata-manager = "flightgear_navdata_manager.app:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/flightgear_navdata_manager"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
